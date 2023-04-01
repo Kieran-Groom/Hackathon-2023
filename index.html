@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+        <script src="script.js" defer></script>
         <title>GO TO ZERO!</title>
 </head>
 
@@ -12,7 +14,7 @@
 <body>
     <div class="header">
         <nav>
-            <img src="legoLogo.png" class="logo">
+            <img src="images/teamLogo.jpeg" class="logo">
             <ul class="nav-links">
                 <li><a href="html/about.html">About</a></li>
                 <li><a href="html/companies.html">Companies</a></li>
@@ -24,43 +26,75 @@
     </div>
 
         <div class="content">
-            <h1>Search Companies</h1>
-            <form>
-                <input type="text" placeholder="&#x270e; Enter Company">
-                <button id="myBtn" type="submit">Find Company</button>
 
-                <script>
-                    const searchCompany = document.getElementById("myBtn");
-
-                    myBtn.addEventListener("click", function(e) {
-                        const name = prompt
-                    });
-
-                </script>
-            </form>
-
+            <h1>Star Companies</h1>
             <div class="category-list">
+                
                 <div class="category">
-                    <img src="firstText/legoLogo.png">
-                    <p>Idk</p>
+                    <a href="https://www.avocadogreenmattress.com">
+                    <img src="images/avocadoLogo.png">
+                    <p>Home Goods</p>
+                    </a>
                 </div>
                 <div class="category">
-                    <img src="firstText/legoLogo.png">
-                    <p>Idk</p>
+                    <a href="https://www.allgoodbodycare.com">
+                    <img src="images/legoLogo.png">
+                    <p>Health & Beauty</p>
+                    </a>
                 </div>
                 <div class="category">
-                    <img src="firstText/legoLogo.png">
-                    <p>Idk</p>
+                    <a href="https://www.us.silverfernfarms.com">
+                    <img src="images/legoLogo.png">
+                    <p>Food</p>
+                    </a>
                 </div>
                 <div class="category">
-                    <img src="firstText/legoLogo.png">
-                    <p>Idk</p>
+                    <a href="https://www.tesla.com">
+                    <img src="images/legoLogo.png">
+                    <p>Cars</p>
+                    </a>
                 </div>
                 <div class="category">
-                    <img src="firstText/legoLogo.png">
-                    <p>Idk</p>
+                    <a href="https://www.patagonia.com/home/">
+                    <img src="images/legoLogo.png">
+                    <p>Clothing</p>
+                    </a>
                 </div>
             </div>
+
+            <h1>Search Companies</h1>
+            <section class="container">
+                
+                <form>
+                    <i class="fas fa-search"></i>
+                    <input type="text" name="" id="search-item" placeholder="&#x270e; Enter Company">
+                </form>
+
+                <div class="company-list">
+                    <div class="company">
+                        <img src="images/walmartLogo.jpg" alt="">
+                        <div class="c-details">
+                            <h2>Walmart</h2>
+                            <h3>Rating: 4 stars</h3>
+                        </div>
+                    </div>
+                    <div class="company">
+                        <img src="images/amazonLogo.png" alt="">
+                        <div class="c-details">
+                            <h2>Amazon</h2>
+                            <h3>Rating: 4 stars</h3>
+                        </div>
+                    </div>
+                    <div class="company">
+                        <img src="images/fedexLogo.png" alt="">
+                        <div class="c-details">
+                            <h2>FedEx</h2>
+                            <h3>Rating: 4 stars</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
 
 </body>
