@@ -1,20 +1,19 @@
-const search = () => {
-    const searchbox = document.getElementById("search-item").value.toUpperCase();
-    const storeitems = documentElementById("company-list");
-    const product = document.querySelectorAll(".company");
-    const cname = document.getElementByTagName("h2");
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
 
-    for(var i = 0; i < cname.length; i++) {
-        let match = product[i].getElementsByTagName('h2')[0];
-
-        if(match) {
-            let textvalue = match.textContent || match.innerHTML
-
-            if(textvalue.toUpperCase().indexOf(searchbox) > -1) {
-                product[i].style.display = "";
-            } else {
-                product[i].style.display = "none";
-            }
-        }
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
     }
+  }
 }
