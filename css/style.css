@@ -12,17 +12,6 @@ html {
     position: relative;
 }
 
-body {
-    background-size: 100vw 100vh;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: none;
-}
-
-
 nav {
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -75,7 +64,7 @@ nav {
 .content {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 70%;
     width: 90%;
     max-width: 900px;
     transform: translate(-50%, -50%);
